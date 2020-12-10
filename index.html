@@ -1,0 +1,105 @@
+<html>
+<head>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link rel="icon" href="Media/icon.png">
+</head>
+<body>
+    <script type="text/javascript" src="script.js">
+</script>
+    <h1>Hello, World!</h1>
+    
+    
+    
+    <input type="radio" id="0-18" name="age" value="0-60">
+    <label for="0-60">0-60</label><br>
+    <input type="radio" id="19-43" name="age" value="19-43">
+    <label for="0-60">19-43</label><br>
+    <input type="radio" id="44+" name="age" value="44+">
+    <label for="0-60">44+</label><br>
+    
+    <button onclick="ageRadioSelected()">Button</button>
+    
+    <p id="ageRadioResult"></p>
+    
+       <h2>Accordion with symbols</h2>
+<p>In this example we have added a "plus" sign to each button. When the user clicks on the button, the "plus" sign is replaced with a "minus" sign.</p>
+<button class="accordion">Proposed solution</button>
+<div class="panel">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+
+
+
+    
+    <p> 
+        Select a radio button and click on Submit. 
+    </p> 
+      
+    Gender: 
+    <input type="radio" name="gender" value="Male">Male 
+    <input type="radio" name="gender" value="Female">Female 
+    <input type="radio" name="gender" value="Others">Others 
+      
+    <br> 
+      
+    <button type="button" onclick="displayRadioValue()"> 
+        Submit 
+    </button> 
+      
+    <br> 
+      
+    <p id="genderRadioResult"></p> 
+      
+   
+    <button class="accordion">Proposed solution</button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    
+    
+    <br>
+    
+    <h2>Adjust these sliders to alter the colour below. Check that these alterations create the desired rgb colour with Selenium.</h2>
+    
+    <p>Red</p>
+    <input type="range" min="0" max="250" value="25" id="redSlider" oninput="displaySliderResults()">
+    
+    <p>Green</p>
+    <input type="range" min="0" max="250" value="220" id="greenSlider" oninput="displaySliderResults()">
+    
+    <p>Blue</p>
+    <input type="range" min="0" max="250" value="40" id="blueSlider" oninput="displaySliderResults()">
+    
+    <br>
+    <p>Colour:</p>
+    
+    <div id="sliderColor"></div>
+    
+    <button class="accordion">Section 3</button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    
+    
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+    
+</body>
+</html>
