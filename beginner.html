@@ -8,13 +8,13 @@
 </script>
     
     <div class="topnav">
-      <a class="active" href="index.html">Getting Started with Selenium Web Testing</a>
-      <a href="beginner.html">Beginner</a>
+      <a href="index.html">Getting Started with Selenium Web Testing</a>
+      <a class="active" href="beginner.html">Beginner</a>
       <a href="intermediate.html">Intermediate</a>
       <a href="advanced.html">Advanced</a>
     </div>
     
-    <h1>Hello, World!</h1>
+    <h1>Beginner</h1>
     
     
     
@@ -32,7 +32,7 @@
     
 <button class="accordion">Proposed solution</button>
 <div class="panel">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <p></p>
 </div>
 
 
@@ -61,7 +61,7 @@
    
     <button class="accordion">Proposed solution</button>
     <div class="panel">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p></p>
     </div>
     
     
@@ -70,26 +70,50 @@
     <h2>Adjust these sliders to alter the colour below. Check that these alterations create the desired rgb colour with Selenium.</h2>
     
     <p>Red</p>
-    <input type="range" min="0" max="250" value="89" id="redSlider" 
+    <input type="range" min="0" max="255" value="89" id="redSlider" 
     oninput="displaySliderResults()">
     
     <p>Green</p>
-    <input type="range" min="0" max="250" value="63" id="greenSlider" oninput="displaySliderResults()">
+    <input type="range" min="0" max="255" value="63" id="greenSlider" oninput="displaySliderResults()">
     
     <p>Blue</p>
-    <input type="range" min="0" max="250" value="98" id="blueSlider" oninput="displaySliderResults()">
+    <input type="range" min="0" max="255" value="98" id="blueSlider" oninput="displaySliderResults()">
     
     <br>
     <p>Colour:</p>
     
     <div id="sliderColor"></div>
     
-    <button class="accordion">Section 3</button>
+    <button class="accordion">Proposed Solution</button>
     <div class="panel">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p></p>
     </div>
     
+     <br>
     
+    <h2>Adjust these sliders to alter the colour below. Check that these alterations create the desired rgb colour with Selenium.</h2>
+    
+    <label for="cars">Choose a car company:</label>
+      <select name="cars" id="cars">
+        <option value selection disabled>-- Select one --</option>
+        <option value="Tesla">Tesla</option>
+        <option value="Volkswagen">Volkswagen</option>
+        <option value="Aptera">Aptera</option>
+        <option value="Alfa">Alfa Romeo</option>
+      </select>
+    
+    <br>
+    
+    <button type="button" onclick="displayCarResults()">Submit</button>
+    
+    <br>
+    <p>Selected car company: <span id="carSelected"></span></p>
+    
+    
+    <button class="accordion">Proposed Solution</button>
+    <div class="panel">
+      <p></p>
+    </div>
 
 
 <script>

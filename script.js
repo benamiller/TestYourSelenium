@@ -30,3 +30,8 @@ function displaySliderResults() {
     console.log(red);
     document.getElementById("sliderColor").style.backgroundColor = "rgba(" + red + ", " + green + ", " + blue + ", 1)";
 }
+
+function displayCarResults() {
+    var car = document.getElementById("cars").value;
+    document.getElementById("carSelected").innerHTML = car;
+}
