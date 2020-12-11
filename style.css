@@ -18,6 +18,7 @@ body {
     outline: none;
     font-size: 15px;
     transition: 0.4s;
+    font-family: 'JetBrains Mono';
 }
 
 .active, .accordion:hover {
@@ -33,7 +34,7 @@ body {
 }
 
 .active:after {
-    content: "\2212";
+    
 }
 
 .panel {
@@ -46,12 +47,14 @@ body {
 
 #sliderColor {
     background-color: rgba(89, 63, 98, 1);
+    border-radius: 6px;
 }
 
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #333;
     overflow: hidden;
+    border-radius: 6px;
 }
 
 /* Style the links inside the navigation bar */
@@ -99,4 +102,12 @@ select {
     padding: 10px;
     border-radius: 9px;
     color: white;
+}
+
+.footerSpace {
+    height: 300px;
+}
+
+.challengeTitle {
+    font-weight: 900;
 }
