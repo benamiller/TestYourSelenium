@@ -1,3 +1,30 @@
+var cars = [
+    {
+        company: "Tesla",
+        model: "Model X",
+        color: "Green"
+    },
+    {
+        company: "Toyota",
+        model: "Yaris",
+        color: "Red"
+    },
+    {
+        company: "Nissan",
+        model: "Volt",
+        color: "Orange"
+    }
+];
+
+
+var output_cars =  cars.filter(function(car) {
+    return car.company == 'Toyota' && car.color == 'Red' ;   
+
+});
+
+
+
+
 function ageRadioSelected() {  
     
     var radioSelection = document.getElementsByName('age'); 

@@ -111,3 +111,8 @@ select {
 .challengeTitle {
     font-weight: 900;
 }
+
+form > input {
+    padding: 5px;
+    font-family: 'JetBrains Mono';
+}
